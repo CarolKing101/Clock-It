@@ -42,7 +42,7 @@ function NavBar() {
     <nav>
       <ul>
         <li className="logo">
-          <img src="/clockit-logo.jpg" alt="Clock-It Logo" />
+          <img src="/logo2.png" alt="Clock-It Logo" />
         </li>
         <li>
           <Link
