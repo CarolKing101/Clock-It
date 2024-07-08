@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import './Calendar.css';
 
-function Calendar() {
+function MyCalendar({ theme }) {
+  const [date, setDate] = useState(new Date());
+
+  const handleDateChange = (newDate) => {
+    setDate(newDate);
+  };
+
   return (
-    <div className="calendar-container">
-      <h1>Calendar</h1>
-      <p>Calendar functionality coming soon...</p>
+    <div className={`calendar-container ${theme}`}>
+      <Calendar
+        onChange={handleDateChange}
+        value={date}
+      />
     </div>
   );
 }
 
-export default Calendar;
+export default MyCalendar;

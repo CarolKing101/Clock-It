@@ -1,0 +1,46 @@
+.big-calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1rem;
+  }
+  
+  .big-calendar-container.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .big-calendar-container.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Customize the appearance of the react-big-calendar */
+  .rbc-calendar {
+    background: inherit;
+    color: inherit;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .rbc-toolbar {
+    background: inherit;
+    color: inherit;
+  }
+  
+  .rbc-event {
+    background: #3174ad;
+    color: white;
+    border: none;
+  }
+  
+  .rbc-selected {
+    background: #265985;
+  }
+  
+  .rbc-today {
+    background: #eaf6ff;
+    color: inherit;
+  }
+  

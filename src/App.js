@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Clock from './components/Clock';
+import Stopwatch from './components/Stopwatch';
 import CountdownTimer from './components/CountdownTimer';
 import Weather from './components/Weather';
-import Calendar from './components/Calendar';
+import BigCalendar from './components/BigCalendar';
 import Settings from './components/Settings';
 import './App.css';
 
@@ -19,16 +19,19 @@ function App() {
     <div className={`app ${theme}`}>
       <NavBar />
       <div className="section" id="home">
-        <Clock />
+        <Clock theme={theme} />
       </div>
-      <div className="section" id="countdown">
-        <CountdownTimer />
+      <div className="section" id="stopwatch">
+        <Stopwatch theme={theme} />
+      </div>
+      <div className="section" id="countdown-timer">
+        <CountdownTimer theme={theme} />
       </div>
       <div className="section" id="weather">
-        <Weather />
+        <Weather theme={theme} />
       </div>
       <div className="section" id="calendar">
-        <Calendar />
+        <BigCalendar theme={theme} />
       </div>
       <div className="section" id="settings">
         <Settings toggleTheme={toggleTheme} />
@@ -58,7 +61,18 @@ function NavBar() {
         <li>
           <Link
             activeClass="active"
-            to="countdown"
+            to="stopwatch"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Stopwatch
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="countdown-timer"
             spy={true}
             smooth={true}
             duration={500}
