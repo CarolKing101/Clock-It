@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Clock from './components/Clock';
-import Countdown from './components/Countdown';
+import CountdownTimer from './components/CountdownTimer';
 import Weather from './components/Weather';
 import Calendar from './components/Calendar';
 import Settings from './components/Settings';
@@ -22,7 +22,7 @@ function App() {
         <Clock />
       </div>
       <div className="section" id="countdown">
-        <Countdown />
+        <CountdownTimer />
       </div>
       <div className="section" id="weather">
         <Weather />

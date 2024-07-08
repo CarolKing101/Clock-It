@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Countdown.css';
+import './Stopwatch.css';
 
-function Countdown() {
+function Stopwatch() {
   const [time, setTime] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const intervalRef = useRef(null);
@@ -35,7 +35,7 @@ function Countdown() {
   };
 
   return (
-    <div className="countdown-container">
+    <div className="stopwatch-container">
       <div className="timer">{formatTime(time)}</div>
       <div className="controls">
         <button onClick={startStop} className={`control-button ${isActive ? 'stop' : 'start'}`}>
@@ -43,9 +43,12 @@ function Countdown() {
         </button>
         <button onClick={reset} className="control-button reset">Reset</button>
       </div>
-      
+      <div className="additional-controls">
+        <button className="additional-button">Settings and sounds</button>
+        <button className="additional-button">Show shortcuts</button>
+      </div>
     </div>
   );
 }
 
-export default Countdown;
+export default Stopwatch;

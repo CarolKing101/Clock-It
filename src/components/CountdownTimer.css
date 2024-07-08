@@ -1,0 +1,67 @@
+.countdown-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.timer {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.control-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-button.start {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.control-button.stop {
+  background-color: #f44336;
+  color: white;
+}
+
+.control-button.reset {
+  background-color: #9E9E9E;
+  color: white;
+}
+
+.control-button:hover {
+  opacity: 0.8;
+}
+
+.additional-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.additional-button {
+  background: none;
+  border: none;
+  color: #3f51b5;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.additional-button:hover {
+  text-decoration: none;
+}
