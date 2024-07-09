@@ -1,28 +1,44 @@
-/* General styling for the weather component */
-.weather-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-image: url('/public/weather-bg.jpg'); /* Make sure the image is placed in the public folder */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.weather-container.light {
-  color: black;
-}
-
-.weather-container.dark {
-  color: white;
-}
-
-.weather-container input {
-  margin: 10px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
+.page-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .weather-background {
+    background-image: url('/public/pexels-maksim-romashkin-7108218.jpg'); /* Add your weather background image to the public folder */
+  }
+  
+  .page-container.light {
+    color: black;
+  }
+  
+  .page-container.dark {
+    color: white;
+  }
+  
+  .page-container h1 {
+    font-size: 5vw; /* Adjust the size to fit the screen */
+    text-align: center;
+  }
+  
+  .page-container h2, .page-container p {
+    font-size: 2vw; /* Adjust the size to fit the screen */
+    text-align: center;
+  }
+  
+  .page-container select {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.5vw;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+  }
+  

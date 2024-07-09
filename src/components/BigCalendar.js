@@ -21,6 +21,7 @@ function BigCalendar({ theme }) {
   return (
     <div className={`big-calendar-container ${theme}`}>
       <Calendar
+      
         localizer={localizer}
         events={events}
         selectable

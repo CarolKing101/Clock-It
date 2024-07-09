@@ -36,6 +36,7 @@ function Stopwatch() {
 
   return (
     <div className="stopwatch-container">
+      <h1 className="page-title">Stopwatch</h1>
       <div className="timer">{formatTime(time)}</div>
       <div className="controls">
         <button onClick={startStop} className={`control-button ${isActive ? 'stop' : 'start'}`}>

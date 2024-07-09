@@ -21,6 +21,7 @@ function CountdownTimer() {
     }
     return () => clearInterval(intervalRef.current);
   }, [isActive, time]);
+  <h1 className="page-title">CountdownTimer</h1>
 
   const startStop = () => {
     if (!isActive && time === 0) {
