@@ -7,6 +7,7 @@ import Weather from './components/Weather';
 import BigCalendar from './components/BigCalendar';
 import Settings from './components/Settings';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -36,6 +37,7 @@ function App() {
       <div className="section" id="settings">
         <Settings toggleTheme={toggleTheme} />
       </div>
+      <Footer />
     </div>
   );
 }
