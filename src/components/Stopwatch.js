@@ -43,10 +43,7 @@ function Stopwatch() {
         </button>
         <button onClick={reset} className="control-button reset">Reset</button>
       </div>
-      <div className="additional-controls">
-        <button className="additional-button">Settings and sounds</button>
-        <button className="additional-button">Show shortcuts</button>
-      </div>
+      
     </div>
   );
 }

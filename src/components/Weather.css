@@ -1,0 +1,24 @@
+/* General styling for the weather component */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/weather-bg.jpg');
+  padding: 20px;
+}
+
+.weather-container.light {
+  color: black;
+}
+
+.weather-container.dark {
+  color: white;
+}
+
+.weather-container input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}

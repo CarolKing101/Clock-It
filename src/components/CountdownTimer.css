@@ -4,9 +4,16 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: white;
+  
+
+}
+
+.countdown-timer-container.light {
   color: black;
-  font-family: Arial, sans-serif;
+}
+
+.countdown-timer-container.dark {
+  color: white;
 }
 
 .timer {

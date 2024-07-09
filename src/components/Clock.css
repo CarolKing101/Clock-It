@@ -1,0 +1,38 @@
+/* General styling for the clock component */
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/public/clock-bg.jpg'); /* Make sure the image is placed in the public folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .clock-container.light {
+    color: black;
+  }
+  
+  .clock-container.dark {
+    color: white;
+  }
+  
+  .clock-container h1 {
+    font-size: 4vw; /* Adjust the size to fit the screen */
+    text-align: center;
+  }
+  
+  .clock-container h2 {
+    font-size: 8vw; /* Adjust the size to fit the screen */
+    text-align: center;
+  }
+  
+  .clock-container select {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.5vw;
+  }
+  
