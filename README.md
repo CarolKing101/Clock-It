@@ -1,3 +1,34 @@
+Clock-It: A Comprehensive World Clock App
+Table of Contents
+Introduction
+Features
+Tech Stack
+Installation
+Usage
+Components
+Future Enhancements
+Contributing
+License
+Introduction
+Clock-It is a comprehensive world clock application designed to help users track time across different cities worldwide. The app also includes additional functionalities like a stopwatch, countdown timer, weather updates, and a calendar. Users can customize the app with light and dark themes for a better user experience.
+
+Features
+Digital Clock: Displays time for selected cities.
+Stopwatch: Start, stop, and reset functionalities.
+Countdown Timer: Set a duration and receive an alert when the time is up.
+Weather Component: Select a city to get the current weather information.
+Calendar: A big calendar for scheduling and viewing events.
+Theme Customization: Choose between light and dark themes.
+Responsive Design: Adjusts seamlessly to different screen sizes.
+Tech Stack
+Frontend:
+React.js: Main framework for building the user interface.
+CSS: Styling the components.
+React Router: Navigation between different sections.
+APIs:
+OpenWeather API: Fetching weather data.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

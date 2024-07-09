@@ -52,6 +52,7 @@ const Weather = ({ theme }) => {
         </div>
       )}
     </div>
+    
   );
 };
 
